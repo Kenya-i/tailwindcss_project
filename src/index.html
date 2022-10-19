@@ -8,18 +8,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>TailWindCss入門</title>
 </head>
 <body class="font-poppins bg-body text-white">
   <!-- ナビゲーションバー -->
   <header class="py-6">
-    <div class="container mx-auto">
-      <div>ShinCode.com</div>
-      <div>
-        <a href="#home">ホーム</a>
-        <a href="#portfolio">ポートフォリオ</a>
-        <a href="#clients">お客さま</a>
-        <a href="#contact"><button>お問い合せ</button></a>
+    <div class="container mx-auto flex justify-between items-center px-8 md:px-14 lg:px-24 w-full">
+      <div class="text-lg font-bold">ShinCode.com</div>
+      <div class="space-x-7 hidden md:flex items-center">
+        <a href="#home" class="hover:text-selected-text transition-all duration-300">ホーム</a>
+        <a href="#portfolio" class="hover:text-selected-text transition-all duration-300">ポートフォリオ</a>
+        <a href="#clients" class="hover:text-selected-text transition-all duration-300">お客さま</a>
+        <a href="#contact">
+          <button class="px-6 py-2 bg-theme font-bold rounded hover:bg-purple-600 transition-all duration-300">お問い合せ</button>
+        </a>
+      </div>
+      <div class="md:hidden">
+        <i class="fa-solid fa-bars"></i>
       </div>
     </div>
   </header>
